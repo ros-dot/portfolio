@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin flex{
+    display: flex !important;
+    justify-content:space-between;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'sebino_regularregular';
+    src: url('./assets/fonts/sebino-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/sebino-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#Main{
+    height: 100vh;
+    background-image: url('./assets/images/main/main-bg.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 550px;
+    margin-bottom: 100px;
+
+    header{
+        padding:30px 60px 30px 60px;
+        @include flex;
+        .left{
+            h1{
+                button{
+                    color:#684fff;
+                    border-radius: 40%;
+                    padding: 10px 20px 10px 20px;
+                    background-color: #f0edff;
+                }
+            }
+        }
+        .right{
+            ul{
+                li{
+                    list-style: none;
+                    display: inline;
+                    margin-left: 60px;
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        
+                        &:hover{
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #Hero{
+        @include flex;
+        margin-bottom: 280px;
+        .left{
+            min-width: 60%;
+            padding-left: 60px;
+            .top{
+                padding-top: 100px;
+                .para{
+                    opacity: 70%;
+                    margin-bottom: 20px;
+                }
+                .buttons{
+                    .hire{
+                        color: #fff;
+                        background-color: #684fff;
+                        padding: 12px 20px 12px 20px;
+                        margin-right: 26px;
+                        &:hover{
+                            background-color: blue;
+                        }
+                    }
+                    .work{
+                        padding: 12px 20px 12px 20px;
+                        border: 1px solid #dfe3eb;
+                        &:hover{
+                            background-color: blue;
+                            color: #fff;
+                        }
+                    }
+                }
+                h1{
+                    font-size: 60px;
+                    font-family: 'sebino_regularregular';
+                    position: relative;
+                    width: 60%;
+                    margin-bottom: 15px;
+                    .rectangle{
+                        position: absolute;
+                        width: 55%;
+                        right: 60px;
+                        bottom:-10px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    span{
+                        color: #684fff;
+                    }
+                }
+            }
+
+            .bottom{
+                position: absolute;
+                bottom: 20px;
+                .social{
+                    @include flex;
+                    gap: 18px;
+                    .icon{
+                        border: 1px solid #dfe3eb;
+                        border-radius: 8px;
+                        padding: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            background-color: #694fff;
+                        }
+                    }
+                    .bg-icon{
+                        background-color: #694fff;
+                    }
+                }
+            }
+        }
+        .right{
+            min-width: 40%;
+            
+            position: relative;
+            .img{
+                width: 70%;
+                position: absolute;
+                left:-120px;
+                z-index: 3;
+                top: -205px;
+                img{
+                    width: 100%;
+                }
+            }
+            .dot{
+                width: 10%;
+                position: absolute;
+                right: 300px;
+                top: -70px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#SecondPage{
+    background-color: #eff2f5;
+    min-height: 100vh;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: url('./assets/images/second/semicircle.png');
+    background-repeat: no-repeat;
+    @include flex;
+    .left{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        position: relative;
+        .dot{
+            width: 100px;
+            position: absolute;
+            left:10px;
+            top: 120px;
+            z-index: 1;
+            img{
+                width: 100%;
+                opacity: 100%;
+            }
+        }
+        .albert{
+            position: relative;
+            .white{
+                width: 560px;
+                height: 542px;
+                position: absolute;
+                top: 15px;
+                left: 30px;
+                z-index: 50;
+                img{
+                    width: 100%;
+
+            }}
+            .pic{
+                width: 560px;
+                height: 542px;
+                position: relative;
+                z-index: 100;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .right{
+        min-width: 48%;
+        h1{
+            font-family: 'sebino_regularregular';
+            margin-bottom: 15px;
+        }
+        p{opacity: 70%;}
+        .features{
+            @include flex;
+            width: 80%;
+            margin-top: 15px;
+            .one{
+                @include flex;
+                gap: 12px;
+                h1{
+                    color: #6146ff;
+                    font-size: 50px;
+            font-family: 'sebino_regularregular';
+
+                }
+                h3{
+                    text-align: left;
+                    font-size: 15px;
+            font-family: 'sebino_regularregular';
+
+                }
+            }
+        }
+        .button{
+            width: 150px;
+            margin-top: 20px;
+            button{
+                color: #fff;
+                background-color: #684fff;
+                padding: 18px 25px 18px 25px;
+                &:hover{
+                    background-color:blue;
+                }
+                border: none;
+                border-radius: 8px;
+                width: 100%;
+                @include flex;
+            }
+        }
+    }
+}

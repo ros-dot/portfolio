@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "sebino_regularregular";
+  src: url("./assets/fonts/sebino-regular-webfont.woff2") format("woff2"), url("./assets/fonts/sebino-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#Main {
+  height: 100vh;
+  background-image: url("./assets/images/main/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 550px;
+  margin-bottom: 100px;
+}
+#Main header {
+  padding: 30px 60px 30px 60px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+#Main header .left h1 button {
+  color: #684fff;
+  border-radius: 40%;
+  padding: 10px 20px 10px 20px;
+  background-color: #f0edff;
+}
+#Main header .right ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 60px;
+}
+#Main header .right ul li a {
+  text-decoration: none;
+  color: #000;
+}
+#Main header .right ul li a:hover {
+  color: blue;
+}
+#Main #Hero {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 280px;
+}
+#Main #Hero .left {
+  min-width: 60%;
+  padding-left: 60px;
+}
+#Main #Hero .left .top {
+  padding-top: 100px;
+}
+#Main #Hero .left .top .para {
+  opacity: 70%;
+  margin-bottom: 20px;
+}
+#Main #Hero .left .top .buttons .hire {
+  color: #fff;
+  background-color: #684fff;
+  padding: 12px 20px 12px 20px;
+  margin-right: 26px;
+}
+#Main #Hero .left .top .buttons .hire:hover {
+  background-color: blue;
+}
+#Main #Hero .left .top .buttons .work {
+  padding: 12px 20px 12px 20px;
+  border: 1px solid #dfe3eb;
+}
+#Main #Hero .left .top .buttons .work:hover {
+  background-color: blue;
+  color: #fff;
+}
+#Main #Hero .left .top h1 {
+  font-size: 60px;
+  font-family: "sebino_regularregular";
+  position: relative;
+  width: 60%;
+  margin-bottom: 15px;
+}
+#Main #Hero .left .top h1 .rectangle {
+  position: absolute;
+  width: 55%;
+  right: 60px;
+  bottom: -10px;
+}
+#Main #Hero .left .top h1 .rectangle img {
+  width: 100%;
+}
+#Main #Hero .left .top h1 span {
+  color: #684fff;
+}
+#Main #Hero .left .bottom {
+  position: absolute;
+  bottom: 20px;
+}
+#Main #Hero .left .bottom .social {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+#Main #Hero .left .bottom .social .icon {
+  border: 1px solid #dfe3eb;
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Main #Hero .left .bottom .social .icon:hover {
+  background-color: #694fff;
+}
+#Main #Hero .left .bottom .social .bg-icon {
+  background-color: #694fff;
+}
+#Main #Hero .right {
+  min-width: 40%;
+  position: relative;
+}
+#Main #Hero .right .img {
+  width: 70%;
+  position: absolute;
+  left: -120px;
+  z-index: 3;
+  top: -205px;
+}
+#Main #Hero .right .img img {
+  width: 100%;
+}
+#Main #Hero .right .dot {
+  width: 10%;
+  position: absolute;
+  right: 300px;
+  top: -70px;
+}
+#Main #Hero .right .dot img {
+  width: 100%;
+}
+
+#SecondPage {
+  background-color: #eff2f5;
+  min-height: 100vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-image: url("./assets/images/second/semicircle.png");
+  background-repeat: no-repeat;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+#SecondPage .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+}
+#SecondPage .left .dot {
+  width: 100px;
+  position: absolute;
+  left: 10px;
+  top: 120px;
+  z-index: 1;
+}
+#SecondPage .left .dot img {
+  width: 100%;
+  opacity: 100%;
+}
+#SecondPage .left .albert {
+  position: relative;
+}
+#SecondPage .left .albert .white {
+  width: 560px;
+  height: 542px;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: 50;
+}
+#SecondPage .left .albert .white img {
+  width: 100%;
+}
+#SecondPage .left .albert .pic {
+  width: 560px;
+  height: 542px;
+  position: relative;
+  z-index: 100;
+}
+#SecondPage .left .albert .pic img {
+  width: 100%;
+}
+#SecondPage .right {
+  min-width: 48%;
+}
+#SecondPage .right h1 {
+  font-family: "sebino_regularregular";
+  margin-bottom: 15px;
+}
+#SecondPage .right p {
+  opacity: 70%;
+}
+#SecondPage .right .features {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 15px;
+}
+#SecondPage .right .features .one {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+#SecondPage .right .features .one h1 {
+  color: #6146ff;
+  font-size: 50px;
+  font-family: "sebino_regularregular";
+}
+#SecondPage .right .features .one h3 {
+  text-align: left;
+  font-size: 15px;
+  font-family: "sebino_regularregular";
+}
+#SecondPage .right .button {
+  width: 150px;
+  margin-top: 20px;
+}
+#SecondPage .right .button button {
+  color: #fff;
+  background-color: #684fff;
+  padding: 18px 25px 18px 25px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+#SecondPage .right .button button:hover {
+  background-color: blue;
+}/*# sourceMappingURL=styles.css.map */
