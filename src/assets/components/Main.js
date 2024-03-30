@@ -9,6 +9,7 @@ export default function Main() {
       <Header />
       <Hero />
       <SecondPage />
+      <ThirdPage />
     </div>
   )
 }
