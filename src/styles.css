@@ -247,3 +247,71 @@
 #SecondPage .right .button button:hover {
   background-color: blue;
 }/*# sourceMappingURL=styles.css.map */
+
+
+/* Base styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.App {
+  display: flex;
+  min-height: 100vh; /* Set minimum height for full viewport */
+  flex-direction: column; /* Stack header and services vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+/* Header */
+.App-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.App-header h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 2rem; /* Adjust title font size */
+}
+
+/* Services section */
+.services {
+  display: flex;
+  flex-wrap: wrap; /* Allow services to wrap on smaller screens */
+  justify-content: space-around; /* Distribute services evenly */
+  width: 80%; /* Limit section width to avoid full-width layout */
+  margin-bottom: 30px; /* Add some space below services */
+}
+
+/* Service boxes */
+.service {
+  width: calc(25% - 20px); /* Calculate width considering margins */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Add rounded corners */
+  text-align: center;
+}
+
+.service h2 {
+  margin-bottom: 10px; /* Space between title and paragraph */
+  font-size: 1.2rem; /* Adjust heading size */
+}
+
+.service p {
+  line-height: 1.5; /* Adjust line spacing for better readability */
+}
+
+/* Contact button */
+.contact-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer; /* Indicate clickable button */
+}
